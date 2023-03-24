@@ -1,0 +1,129 @@
+/* styles.css */
+/* universal selector - Applies to whole document */
+body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-image: linear-gradient(to bottom right, #18395a, #32587f, #688db3);
+	color: #fff;
+}
+/* To center everything in game */
+.game{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Title of the game */
+.title{
+	position: absolute;
+	top: 0;
+	font-size: 4rem;
+	z-index: 2;
+}
+
+/* Score Board */
+.score{
+	display: flex;
+	width: 30vw;
+	justify-content: space-evenly;
+	position: absolute;
+	top: 70px;
+	z-index: 1;
+}
+
+/* Score */
+.p-count,.c-count{
+	text-align: center;
+	font-size: 1.5rem;
+	margin-top: 1rem;
+}
+
+/* displaying three buttons in one line */
+.options{
+	display: flex;
+	width: 50vw;
+	justify-content: space-evenly;
+	margin-top: 2rem;
+}
+
+/* Styling on all three buttons */
+.rock, .paper, .scissor{
+	padding: 0.8rem;
+	width: 100px;
+	border-radius: 10px;
+	background: rgb(8, 237, 8);
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+.rock:hover, .paper:hover, .scissor:hover{
+	background: rgb(233, 237, 8);
+	transition: all ease-in-out 300ms;
+}
+
+.move{
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+/* Reload button style */
+.reload {
+	display: none;
+	margin-top: 2rem;
+	padding: 1rem;
+	background: rgb(8, 237, 8);
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.reload:hover {
+	background: rgb(233, 237, 8);
+	transition: all ease-in-out 300ms;
+}
+
+.result{
+	margin-top: 20px;
+	font-size: 2.5rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 612px)
+{
+	.title{
+		text-align: center;
+	}
+	.score{
+		position: absolute;
+		top: 200px;
+		width: 100vw;
+	}
+	.options{
+		width: 100vw;
+	}
+}
+
+.image-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	height: 400px;
+	padding-top: 7em;
+}
+
+.computer-image, #player-image {
+	display: flex;
+	align-items: center;
+}
+
+img {
+	padding: 1.5em 0;
+	width: 25%;
+	margin: auto;
+}
