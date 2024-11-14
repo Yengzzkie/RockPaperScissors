@@ -5,12 +5,8 @@ A simple RPS game. This project is part of [The Odin Project](https://www.theodi
 ## Table of Contents
 
 - [Overview](#overview)
-- [Project Requirements](#project-requirements)
 - [Features](#features)
 - [Built With](#built-with)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [License](#license)
 
 ## Overview
 
